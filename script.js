@@ -1,0 +1,1 @@
+document.querySelectorAll('.country').forEach(country=>{country.addEventListener('click',()=>{const card=document.getElementById('previewCard');const data={france:['France 🇫🇷','Feu! Chatterton'],usa:['United States 🇺🇸','Metallica'],japan:['Japan 🇯🇵','RADWIMPS']};const d=data[country.id];card.innerHTML=`<h3>${d[0]}</h3><p>Featured Artist</p><strong>${d[1]}</strong>`;});});
